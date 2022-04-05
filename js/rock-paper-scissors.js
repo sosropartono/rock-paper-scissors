@@ -6,7 +6,7 @@ const scissors = document.createElement('button');
 rock.id = 'rock';
 rock.innerHTML = '<img src="img/rock.png" alt="rock">';
 paper.id = 'paper';
-paper.innerHTML ='<img src="img/paper.jpeg" alt="paper">'
+paper.innerHTML ='<img src="img/paper.png" alt="paper">'
 scissors.id = 'scissors';
 scissors.innerHTML = '<img src="img/scissors.png" alt="scissors">'
 
@@ -45,22 +45,28 @@ function playRound(playerSelection, computerSelection){
         alert(`You tied! Both of you picked ${playerSelection}.`)
         return console.log("Tie");
     } else if(playerSelection == "rock" && computerSelection == "paper" ){
-        alert("You lose! Paper wins over Rock.")
+        alert(`Computer Plays: ${computerSelection} \n`
+         + "You lose! Paper wins over Rock.")
         return console.log("Computer");
     } else if(playerSelection == "rock" && computerSelection == "scissors" ){
-        alert("You win! Rock wins over Scissors.")
+        alert(`Computer Plays: ${computerSelection} \n`
+        + "You win! Rock wins over Scissors.")
         return console.log("Player");
     }else if(playerSelection == "paper" && computerSelection == "scissors" ){
-        alert("You lose! Scissors wins over Paper.")
+        alert(`Computer Plays: ${computerSelection} \n`
+        + "You lose! Scissors wins over Paper.")
         return console.log("Computer");
     } else if(playerSelection == "paper" && computerSelection == "rock" ){
-        alert("You win! Paper wins over rock.")
+        alert(`Computer Plays: ${computerSelection} \n`
+        + "You win! Paper wins over Rock.")
         return console.log("Player");
     }else if(playerSelection == "scissors" && computerSelection == "rock" ){
-        alert("You lose! Rock wins over Scissors.")
+        alert(`Computer Plays: ${computerSelection} \n`
+        + "You lose! Rock wins over Scissors.")
         return console.log("Computer");
     } else if(playerSelection == "scissors" && computerSelection == "paper" ){
-        alert("You win! Scissors wins over Paper.")
+        alert(`Computer Plays: ${computerSelection} \n`
+        + "You win! Scissors wins over Paper.")
         return console.log("Player");
     }
 
