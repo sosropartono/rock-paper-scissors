@@ -20,12 +20,10 @@ document.body.appendChild(container);
 //Plays game whenever the user clicks on an choice of either rock, paper, or scissors
 rock.addEventListener('click',() => { 
     playRound("rock", computerPlay());
-
 });
 
 paper.addEventListener('click', () => { 
     playRound("paper",computerPlay());
-
 });
 
 scissors.addEventListener('click', () => { 
@@ -40,8 +38,6 @@ function computerPlay(){
     let compChoice = choices[randInt];
     return compChoice.toLowerCase();
 }
-
-
 
 //Compares input from playerSelection and computerPlay to pick a winner, if tied, round is replayed
 function playRound(playerSelection, computerSelection){
